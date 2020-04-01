@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hotmedia-272415",
+  "private_key_id": "d440419ce8a5b870b136a6ae155e2c5390833301",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCl11pKwwwTEDro\nI7I7yMzN/JEDIbNaBjtT5PIae8wjtcQOYI0zQlZV0Oe7cblscUkHPYuzYEPhzfsj\n5iuX2L2DqPp+U7WJQpXDcWfGE38oXHBh4SniBiN8C/MKOFY17EZoc71kp9ZwaUEn\nUbsaPw+zbfVnMqduuQmxojCwC8KP+mOuzqjBTN/xyzgzNeEtzGUAVl3PqpvyvY1j\ngCBos/SuDAJmS4PqaQGn3SmXT5V5rl9zSMc2xhf4ZTirv3L1stT4GsNJu4zesEiX\nwWjNjK6Fosfe7oqkKrCmysPMs/7B91zU7qijl3Yue8fcpcJICVnyfi+DaRm7HBh3\nen1i0+83AgMBAAECggEACwPMLqCuJHVUrEbJV5jafX3zyw+fIBtqL67KTmxViTOm\nk3E3P6XSzSgEaYSVVQ4LKddyeBYB5uAC+QXtyaFEKRf9QeG2cijsKzXU4ijjrl8W\nucbg528Sm/Jr5eG1sXwsIFOQ9eat4qZ4Wi+0ASYaGV1JdN1o6yeQF25sfxeGMyt0\ntlbm0BdD7A6kEXVvgOWUu6vkFqgQhTMOd0DS0zXEULYAodQ55nDxTeJ2BvqfkaWh\nUlbSIY7Zr0+MCtZO/eVfsp/+Cpb9xiyeBpWXqUHFvCHsv5WjkeVGkV0ZfdRRbXLu\nCL4qFDbjIBij64CFw15opkpyvfSn3/WRlucaljNjvQKBgQDVAYa0or1lIO+w0jq1\nfrHrOYcldaMKj7LmsdUJK+4IX4bCi3urM9CVY9m6ChOdBEjOAqitBUloI56hfaGR\n7/v2WgzfwiZRfnlW0En9J5v1K4m1/ViMSM8C6y/zEnWslnNq6CHBeDccAc4VwNJC\nQd9umM8bzSiD+eq9gS0WLScBdQKBgQDHULk1DvDzVSbrNPC5UFUQjnC+FoYQDZAx\nvMbQ72ZzHZRuplmSRpY+Apu+vvYCshRNHJgJd+Vv0vpnKq9Z9S0nuJtLCM0mmvl2\nzPfhp3GmmzGXfgh98rNyw+04R85Tyo1bIUdXTVotNCbRkx7VM0/IlyCNp67Cl52n\nvkMzKZnMewKBgHcXrVsdiksaiSkRwaVsOsnLllZJWWk0QtBdKUFBgIrJ7iyjk/d6\ntupvs3Ii5ChsFtCoB+sFA6/oCm88MLPJu9RXMM+CW65AylLRjiyukrIXL53DElkM\n9EErgdmjvotKaymgtA7ZyeYs1C6xal2FOwk5AsMGh9qSRr7BlJXLlP1pAoGABEap\nEohVhwLmqNkj6PXePVKw/IMDMUj5NPf10/mu2v1hd9Y9ybOV+ZKYwMjcAkbLxLO+\nV0WpOHLwSFJUHLvz0gxV2JBBxnhArdnL3512BLsDn1pm2DziuK2XY0O3G3kW+0OF\ngkv4iUu7IXfki3JkXctQOXnFeAtEqJqeWnSkBg0CgYBb97brX98mR+xB7G9Oo26a\nrqqcuUKOLx2z7vMO4Z/kdJoEFQ6hb75HslbY6j1FJxE8m38aQwj1b8NVjdhueAEc\np5b515FDeWKy+ZHIcKxV6aCJ00Xf+RxfIXytT7MViirsIOob1YoMYTNdAhloFopC\nSjUwQD87mhL2R2rdZlM3Vw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "hotmedia@hotmedia-272415.iam.gserviceaccount.com",
+  "client_id": "100720842715647845728",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/hotmedia%40hotmedia-272415.iam.gserviceaccount.com"
+}
