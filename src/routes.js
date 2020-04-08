@@ -1,39 +1,38 @@
 const router = require('express').Router()
 const gCloudUpload = require('./middlewares/googleStorage')
-const mongoose = require('mongoose')
-const fs = require('fs')
 
-// Models
-const File = require('./Models/File')
+// Controllers
+const File = require('./controllers/FileController')
+const FileSearch = require('./controllers/FileSearchController')
+const User = require('./controllers/UserController')
+const UserProfile = require('./controllers/UserProfileController')
 
 // Multer
 const multer = require('multer')
 const multerConfig = require('./config/multer')
 
-router.post('/upload', multer(multerConfig).single('file'), gCloudUpload, async (req, res) => {
-    const file = req.file.gCloudFile
-    if(!file) return res.status(400).json({ error: "Error, try again." })
+// Passport
+const passport = require('passport')
+require('./config/passport')
 
-    const fileSaved = await File.create({
-        name: file.name,
-        originalname: req.file.originalname,
-        size: file.size,
-        type: file.contentType,
-        url: file.mediaLink
-    })
+// File's routes
+router.get('/files', passport.authenticate('jwt', { session: false }), File.index)
+router.get('/info/:id', File.show)
+router.get('/files/search', passport.authenticate('jwt', { session: false }), FileSearch.search)
+router.post('/upload', multer(multerConfig).single('file'), gCloudUpload, passport.authenticate('jwt', {
+    session: false
+}), File.create)
+router.post('/info/download/:id', File.update)
+router.delete('/delete/:id', passport.authenticate('jwt', { session: false }), File.delete)
 
-    return res.json({ fileSaved })
-})
-
-router.get('/info/:id', async (req, res) => {
-    const { id } = req.params
-    const isValidID = mongoose.Types.ObjectId.isValid(id)
-    if(!isValidID) return res.status(400).json({ error: "Params with bad format." })
-
-    const file = await File.findOne({ _id: id })
-    if(!file) return res.status(400).json({ error: "File not found." })
-
-    return res.json({ file })
-})
+// User's routes
+router.get('/users', User.index)
+router.get('/getUser', passport.authenticate('jwt', { session: false }), User.getUser)
+router.post('/user', User.create)
+router.post('/user/store', User.store)
+router.put('/user/update', passport.authenticate('jwt', { session: false }), UserProfile.update) // update first_name and last_name
+router.put('/user/picture', multer(multerConfig).single('file'), gCloudUpload, passport.authenticate('jwt', {
+    session: false
+}), UserProfile.uploadPhoto) // upload photo
 
 module.exports = router

@@ -7,7 +7,10 @@ const { errors } = require('celebrate')
 // App config
 const app = express()
 app.use(express.json())
-app.use(cors())
+app.use(express.urlencoded({ extended: false }))
+app.use(cors({
+    // origin: process.env.FRONT_URL
+}))
 app.use(errors())
 env.config()
 
