@@ -14,7 +14,7 @@ module.exports = {
             "type": {
                 $in: new RegExp(type)
             }
-        })
+        }).sort({ _id: -1 })
 
         return res.json(file)
     },
